@@ -1,0 +1,115 @@
+# atividades do dia 03/06
+1)
+#include <stdio.h>
+
+int main () {
+
+int i = 0;
+int j = 0;
+float matriz [4] [4];
+
+for(i = 0; i < 4 ; i++){
+	printf("disciplina %d: \n", i + 1 );
+	for(j = 0; j < 4; j++){
+		printf("digite a nota %d : ", j + 1);	
+			scanf("%f", &matriz [i] [j]);
+	}
+}
+for(i = 0; i < 4; i++){
+	printf("disciplina %d: \n", i + 1);
+	for(j = 0; j < 4; j++){
+		printf("nota %d: %.1f  ", j + 1, matriz [i] [j]);
+	}
+	printf("\n");
+}
+
+}
+
+2)
+#include <stdio.h>
+
+int main() {
+
+int i = 0;
+int j = 0;
+int matriz [3] [3];
+
+for(i = 0; i < 3; i++) {
+	for(j = 0; j < 3; j++) {
+		scanf("%d", &matriz[i] [j]);
+	}	
+}
+
+for(i = 0; i < 3; i++) {
+	for(j = 0; j < 3; j++) {
+		printf("%d ", matriz [i] [j]);
+	}
+	printf("\n" );
+}
+
+ return 0;
+}
+
+3)
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    float matriz[4][4];
+    float soma, media;
+
+    // Leitura das notas
+    for(i = 0; i < 4; i++) {
+        printf("\nDisciplina %d\n", i + 1);
+
+        for(j = 0; j < 4; j++) {
+            printf("Digite a nota %d: ", j + 1);
+            scanf("%f", &matriz[i][j]);
+        }
+    }
+
+    // Cálculo e exibição das médias
+    for(i = 0; i < 4; i++) {
+        soma = 0;
+
+        for(j = 0; j < 4; j++) {
+            soma += matriz[i][j];
+        }
+
+        media = soma / 4;
+
+        printf("Media da disciplina %d = %.2f\n", i + 1, media);
+    }
+
+    return 0;
+}
+4)
+#include <stdio.h>
+
+int main() {
+
+    float matriz[4][4];
+    float soma, media;
+    int i, j;
+
+    for(i = 0; i < 4; i++) {
+
+        soma = 0;
+
+        printf("Disciplina %d\n", i + 1);
+
+        for(j = 0; j < 4; j++) {
+
+            printf("Digite a nota %d: ", j + 1);
+            scanf("%f", &matriz[i][j]);
+
+            soma = soma + matriz[i][j];
+        }
+
+        media = soma / 4;
+
+        printf("Media da disciplina %d = %.1f\n\n", i + 1, media);
+    }
+
+    return 0;
+}
