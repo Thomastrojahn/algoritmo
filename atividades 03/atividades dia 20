@@ -1,1 +1,120 @@
+1)
+	# include <conio.h>
+	# include <stdio.h>
+	
+	int main(){
+		
+		
+	
+	int vetor[5];
 
+	int i;
+	
+	for(i=0; i<5; i++){
+		printf("digite um numero:");
+		scanf("%d", &vetor[i]);
+	}
+	
+	for(i=0; i<5; i++){
+	printf("%d\n", vetor[i]);
+	
+	}
+	return 0;	
+}
+2)
+# include <stdio.h>
+
+
+ int main () {
+
+	float vetor[5];
+    float soma = 0;
+	
+	for (int i = 0; i < 5; i++) {
+	printf("digite o valor %d: ", i + 1);
+	scanf("%f", &vetor[i]);
+
+	}
+	
+ for (int i = 0; i < 5; i++) {
+ 	soma += vetor[i];
+ }
+ 
+ printf("soma = %2.f\n", soma);
+ 
+  return 0;
+ }
+3)
+#include <stdio.h>
+
+int main() {
+	int vetor[6];
+
+for (int i = 0; i < 6; i++) {
+	printf("digite o %d numero", i + 1);	
+	scanf("%d", &vetor[i]);
+}
+
+for (int i = 5; i >= 0; i--) {
+	printf("%d\n", vetor[i]);
+}
+
+return 0;
+}
+4)
+#include <stdio.h>
+
+int main() {
+
+int vetor[10];
+int pares = 0, impress = 0;
+
+for (int i = 0; i < 10; i++) {
+	printf("digite o %d numero: ", i + 1);
+	scanf("%d", &vetor[i]);
+}
+
+for (int i = 0; i < 10; i++) {
+	if (vetor[i] % 2 ==0) {
+	
+	pares++;
+	
+	} else {
+	
+	impares++;
+	
+	}
+
+}
+  printf("\nQuantidade de pares: %d\n", pares);
+  printf("Quantidade de impares: %d\n", impares);
+
+}
+5)
+#include <stdio.h>
+
+int main() {
+    int vetor[8];
+    int maior;
+
+    // Leitura dos valores
+    for (int i = 0; i < 8; i++) {
+        printf("Digite o %dº numero: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+
+    // Inicializa com o primeiro elemento
+    maior = vetor[0];
+
+    // Procura o maior valor
+    for (int i = 1; i < 8; i++) {
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+        }
+    }
+
+    // Exibe o resultado
+    printf("Maior valor: %d\n", maior);
+
+    return 0;
+}
