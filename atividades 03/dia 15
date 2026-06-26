@@ -1,1 +1,219 @@
+1)
+/* ==============================================================
+*	Nome do progroma: Calculadora de Desconto Acadêmico
+*
+*	Objetivo: Calcular descontos
+*
+* 	Autor: Thomas Halberstadt Trojahn
+*
+*	Data: 06/05/2026
+*
+* =============================================================== */
 
+#include <stdio.h>
+#include <conio.h>
+	
+	main(void) {
+	
+	printf("digite o valor da mensalidade:");
+		scanf("%f", &mensalidade);
+		
+	printf("digite o metodo (1-a vista / 2-parcelado):");
+		scanf("%d", &metodo);
+		
+	printf("aluno e monitor? (1-sim / 2-nao):");
+		scanf("%d", &monitor);
+		
+	 	
+		 if(metodo == 1){
+		 	valorfinal  = mensalidade * 0.90;
+		 }		
+		
+		if else(monitor == 1) {
+			valor final = valor final * 0,95;
+		
+		}
+
+		else {
+		 valor = mensalidade;
+		}
+
+	printf("o valor final a pagar:  R$ %.2f", valorfinal);
+
+
+	getch();
+}
+
+2)
+/* =======================================================
+* Nome do programa: ler_temperatura.
+*
+* Objetivo: ler a temperatura e dizer se é ideial ou não.
+*
+*
+* Autor: Thomas Halberstadt Trojahn.
+*
+*
+* Data: 15/04/2026.
+*
+* ====================================================== */
+
+
+
+#include <stdio.h>
+#include <conio.h>
+main (){
+	
+int temp;
+	//perguntar ao usuario a temperatura.
+	printf("digite a temperatura (em celcius):");
+	scanf("%d", &temp);
+	//quando e entre alguma coisa sempre colocar 2 && e colocar menor igual a e maior igual a.
+	
+	if(temp >=70 && temp <=80){
+		printf("temperatura ideal para o mate");
+	}//pra ser menor ou igual colocar <= e o numero.
+	
+	else if(temp <=70){
+		printf("agua esta muito fria");
+    }//e na parte do else nao precisa colocar nada apenas o printf e.
+	
+	else{
+		printf("agua muito quente, vai queimar a erva");		
+    }
+	//nos if, else if e else sempre colocar {} para abrir e fechar.
+getch();
+		
+}
+
+3)
+/* ==============================================================
+* Nome do programa: apresentar_a_nota.
+*
+* Objetivo: Fazer o programa falar se o aluno foi aprovado, em exame e reprovado.
+*
+* Autor: Thomas Halberstadt Trojahn.
+*
+* Data:15/04/2026.
+* ================================================================*/ 
+
+
+
+#include <stdio.h>
+#include <conio.h>
+
+main(){
+
+    float nota;
+	//faz o usuário digitar a sua nota.
+	printf("digite a sua nota:");
+	scanf("%f" ,&nota);
+	
+    //se a nota do aluno foi igual ou maior a 7 o sistema fala que ele foi aprovado.
+	if(nota >= 7.0f){
+		printf("aprovado");
+	}
+	//se a nota do aluno for entre 5 e 6,9 o sistema vai falar que ele esta em exame.
+	else if(nota >=5.0f && nota <=6.9f ){
+		printf("em exame");	
+	}
+	//e se a nota for abaixo de 5 o sistema vai falar que o aluno foi reprovado
+	else{
+		printf("reprovado");
+	}
+	
+
+
+getch();
+
+
+}
+4)
+/* ======================================================
+* Nome do programa: classificação_dos_triangulos.
+*
+* Objetivo: realizar o calculo de uma piramide.
+*
+* Autor: Thomas Halberstadt Trojahn.
+*
+* Data: 15/04/2026.
+*
+* =======================================================*/
+#include <stdio.h>
+#include <conio.h>
+
+main(void){
+
+	float a, b, c;
+	//ele pede o primeiro valor e escaneia.
+	printf("digite o primeiro valor:");
+		scanf("%f", &a);
+	//ele pede o segundo valor e escaneia.
+	printf("digite o segundo valor:");
+		scanf("%f", &b);
+	//ele pede o terceiro valor e escaneia.
+	printf("digite o terceiro valor:");	
+		scanf("%f", &c);
+	//ele calcula os valores e se os 3 lados forem iguais ele vai ser um equilatero.
+	if(a + b > c && a + c > b && b + c > a){
+		printf("ele e equilatero ");
+	}
+	//ele calcula os lados e se 2 lados forem iguais vai ser um isosceles.
+	else if(a == b > c && a == c > b && b == c > a){
+		printf("ele e isosceles");
+	}
+	//e se os 3 lados forem diferentes ele vai ser um escaleno.
+	else{
+		printf("ele e escaleno");
+	}
+
+
+getch();
+}
+
+5)
+/* ==============================================================
+*	Nome do progroma: Calculadora de Desconto Acadêmico
+*
+*	Objetivo: Calcular descontos
+*
+* 	Autor: Thomas Halberstadt Trojahn
+*
+*	Data: 06/05/2026
+*
+* =============================================================== */
+
+#include <stdio.h>
+#include <conio.h>
+	
+	main(void) {
+	
+	printf("digite o valor da mensalidade:");
+		scanf("%f", &mensalidade);
+		
+	printf("digite o metodo (1-a vista / 2-parcelado):");
+		scanf("%d", &metodo);
+		
+	printf("aluno e monitor? (1-sim / 2-nao):");
+		scanf("%d", &monitor);
+		
+	 	
+		 if(metodo == 1){
+		 	valorfinal  = mensalidade * 0.90;
+		 }		
+		
+		if else(monitor == 1) {
+			valor final = valor final * 0,95;
+		
+		}
+
+		else {
+		 valor = mensalidade;
+		}
+
+
+	printf("o valor final a pagar:  R$ %.2f", valorfinal);
+
+
+	getch();
+}
