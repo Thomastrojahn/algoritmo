@@ -1,0 +1,81 @@
+Código do trabalho final:
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+
+    char texto[100];
+    int i;
+    int tamanaho;
+	int vogais = 0;
+	int consoantes = 0;
+	
+    printf("Digite uma palavra: ");
+    scanf("%s", texto);
+
+    printf("Voce digitou: %s\n", texto);
+    printf("A palavra possui %d letras.\n", strlen(texto));
+
+    for(i = 0; texto[i] != '\0'; i++) {
+
+        if(texto[i] == 'a' || texto[i] == 'e' ||
+           texto[i] == 'i' || texto[i] == 'o' ||
+           texto[i] == 'u' || texto[i] == 'A' ||
+           texto[i] == 'E' || texto[i] == 'I' ||
+           texto[i] == 'O' || texto[i] == 'U') {
+
+            vogais++;
+        }
+
+    }
+
+    printf("Quantidade de vogais: %d\n", vogais);
+
+for(i = 0; texto[i] != '\0'; i++) {
+
+    if((texto[i] >= 'a' && texto[i] <= 'z') ||
+       (texto[i] >= 'A' && texto[i] <= 'Z')) {
+
+        if(texto[i] != 'a' && texto[i] != 'e' &&
+           texto[i] != 'i' && texto[i] != 'o' &&
+           texto[i] != 'u' && texto[i] != 'A' &&
+           texto[i] != 'E' && texto[i] != 'I' &&
+           texto[i] != 'O' && texto[i] != 'U') {
+
+            consoantes++;
+        }
+    }
+}
+
+	printf("Quantidade de consoantes: %d\n", consoantes);
+    
+    
+    for(i = 0; texto[i] != '\0'; i++) {
+    texto[i] = toupper(texto[i]);
+}
+
+	printf("Texto em maiusculas: %s\n", texto);
+    
+    for(i = 0; texto[i] != '\0'; i++) {
+    texto[i] = tolower(texto[i]);
+}
+
+	printf("Texto em minusculas: %s\n", texto);
+    
+    
+    tamanho = strlen(texto);
+	
+	printf("Texto invertido: ");
+
+		for(i = tamanho - 1; i >= 0; i--) {
+	    printf("%c", texto[i]);
+	}
+	
+	printf("\n");
+	
+	
+	return 0;
+	
+}
